@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[Live site](https://home-inventory-lyart-two.vercel.app) This is a inventory management system dashboard.
 
 ## Getting Started
 
@@ -14,23 +14,24 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project, **Homebox**, is a high-fidelity Home Inventory Management System built with **Next.js 15** and **TypeScript**. It is designed to help users catalog, organize, and track their personal belongings across multiple physical locations with the precision of a professional asset management tool.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technical Core
 
-## Learn More
+The application follows a modern full-stack architecture optimized for performance and type safety:
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend Framework:** Next.js (App Router) for seamless server-side rendering and routing.
+- **State Management & Data Fetching:** Powered by **TanStack Query (React Query)** to handle asynchronous API states, caching, and background synchronization.
+- **UI Architecture:** Built using **Tailwind CSS** and **Shadcn UI** components, customized to strictly adhere to high-fidelity Figma specifications.
+- **Robust Type System:** A centralized TypeScript interface layer (e.g., `InventoryItem`, `Location`) ensures data integrity across the entire component tree.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Dynamic Inventory List:** A searchable, paginated table featuring real-time data fetching and custom-styled category labels.
+- **Location Hierarchy:** An intuitive tree-view navigation system allowing users to drill down from broad areas (e.g., "Garage") to specific containers (e.g., "Tool Cabinet").
+- **Visual Asset Management:** A dedicated gallery component for item details, supporting primary images and multi-thumbnail previews.
+- **Secure Session Management:** Integrated authentication flow with token-based security, protected routes, and automated redirection.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---

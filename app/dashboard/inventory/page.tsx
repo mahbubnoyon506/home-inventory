@@ -15,12 +15,12 @@ export default function InventoryPage() {
   if (isLoading) return <InventorySkeleton />;
 
   return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="flex flex-col justify-between">
       <FilterBar />
       <div>
-        <div className="px-2 md:px-4 pt-4 md:pt-10 ">
-          <div className="rounded-t-xl border bg-white shadow-sm overflow-scroll max-h-96">
-            <table className="w-full text-left">
+        <div className="px-2 md:px-4 pt-4 md:pt-10 overflow-hidden">
+          <div className="w-full rounded-t-xl border bg-white shadow-sm overflow-x-scroll">
+            <table className="w-full text-left ">
               <thead className="bg-slate-50 border-b text-slate-500 text-sm uppercase">
                 <tr>
                   <th className="px-4 py-3 text-xs font-semibold text-[#334155]">

@@ -30,7 +30,7 @@ const BookShelf = () => {
             <Button
               variant="outline"
               size="sm"
-              className="font-semibold text-[#334155] gap-2"
+              className="font-semibold text-[#334155] gap-2 cursor-pointer"
             >
               <Pencil size={14} /> Edit
             </Button>
@@ -44,7 +44,7 @@ const BookShelf = () => {
             <Button
               variant="outline"
               size="sm"
-              className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50"
+              className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50 cursor-pointer"
             >
               <Trash2 size={14} /> Delete
             </Button>

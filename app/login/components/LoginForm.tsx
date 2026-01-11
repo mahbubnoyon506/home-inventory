@@ -115,7 +115,7 @@ export function LoginForm() {
 
             <Button
               size="sm"
-              className="w-full bg-[#3B82F6] py-3 hover:bg-blue-700"
+              className="w-full bg-[#3B82F6] py-3 hover:bg-blue-700 cursor-pointer"
             >
               Sign in →
             </Button>
@@ -124,7 +124,7 @@ export function LoginForm() {
 
         <p className="mt-6 text-center text-sm text-slate-500">
           Don&apos;t have an account?{" "}
-          <button className="font-semibold text-blue-600 hover:underline">
+          <button className="font-semibold text-blue-600 hover:underline cursor-pointer">
             Create one
           </button>
         </p>

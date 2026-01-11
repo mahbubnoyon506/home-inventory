@@ -25,7 +25,7 @@ export default function LocationsPage() {
                 className="pl-10 bg-white"
               />
             </div>
-            <Button className="w-full font-semibold bg-blue-600 hover:bg-blue-700 gap-2">
+            <Button className="w-full font-semibold bg-blue-600 hover:bg-blue-700 gap-2 cursor-pointer">
               <Plus size={18} /> New Location
             </Button>
           </div>

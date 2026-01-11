@@ -15,15 +15,18 @@ const HeaderBar = ({ name }: PageProps) => {
           </div>
         </div>
         <div className="flex-1 flex items-center gap-3 md:justify-end">
-          <Button variant="outline" className="text-[#334155] font-semibold">
+          <Button
+            variant="outline"
+            className="text-[#334155] font-semibold cursor-pointer"
+          >
             <Pencil /> Edit
           </Button>
-          <Button className="font-semibold bg-[#3B82F6] hover:bg-[#4179d3]">
+          <Button className="font-semibold bg-[#3B82F6] hover:bg-[#4179d3] cursor-pointer">
             <Paperclip /> Add Attachment
           </Button>
           <Button
             variant="outline"
-            className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50"
+            className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50 cursor-pointer"
           >
             <Trash2 size={14} /> Delete
           </Button>

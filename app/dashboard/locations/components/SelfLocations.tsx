@@ -34,7 +34,7 @@ const SelfLocations = () => {
         </h3>
         <Button
           variant="link"
-          className="text-[#3B82F6] gap-1 text-sm font-medium"
+          className="text-[#3B82F6] gap-1 text-sm font-medium cursor-pointer"
         >
           View All <ArrowRight size={14} />
         </Button>
@@ -82,7 +82,7 @@ const SelfLocations = () => {
 
       <Button
         variant="ghost"
-        className="w-full border border-dashed border-slate-200 text-blue-600 hover:bg-blue-50/50 py-8 gap-2"
+        className="w-full border border-dashed border-slate-200 text-blue-600 hover:bg-blue-50/50 py-8 gap-2 cursor-pointer"
       >
         <Plus size={18} /> Add Item to this Location
       </Button>

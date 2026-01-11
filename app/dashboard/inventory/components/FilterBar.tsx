@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge";
 const FilterBar = () => {
   return (
     <div>
-      <div className="bg-white p-2 md:p-4 flex justify-between items-center gap-3">
+      <div className="bg-white p-2 md:p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
         <div className="flex-1 flex gap-3 items-center">
           <h1 className="text-xl md:text-2xl font-bold text-[#0F172A]">
             Inventory
           </h1>
-          <div className="relative w-full">
+          <div className="relative md:w-full">
             <Search className=" w-4 h-4 text-gray-400 absolute top-3 left-2" />
             <Input
               name="search items"
@@ -22,11 +22,14 @@ const FilterBar = () => {
             />
           </div>
         </div>
-        <div className="flex-1 flex items-center gap-3 justify-end">
-          <Button variant="outline" className="text-[#334155] font-semibold">
+        <div className="flex-1 flex items-center gap-3 md:justify-end">
+          <Button
+            variant="outline"
+            className="text-[#334155] font-semibold cursor-pointer"
+          >
             <Download /> Export
           </Button>
-          <Button className="font-semibold bg-[#3B82F6] hover:bg-[#4179d3]">
+          <Button className="font-semibold bg-[#3B82F6] hover:bg-[#4179d3] cursor-pointer">
             <Plus /> Add Item
           </Button>
         </div>
@@ -45,7 +48,7 @@ const FilterBar = () => {
               <X />
             </Badge>
             <Button
-              className="font-medium text-[#334155] text-sm"
+              className="font-medium text-[#334155] text-sm cursor-pointer"
               variant="outline"
               size="sm"
             >
@@ -56,7 +59,7 @@ const FilterBar = () => {
         <div className="flex-1 flex items-center gap-3 md:justify-end">
           <p className="text-[#475569] text-sm">248 items</p>
           <Button
-            className="font-normal text-[#334155] text-sm"
+            className="font-normal text-[#334155] text-sm cursor-pointer"
             variant="outline"
             size="sm"
           >
