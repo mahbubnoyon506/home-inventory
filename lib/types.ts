@@ -88,6 +88,7 @@ export interface ItemDetail {
   assetId?: string;
   imageId?: string;
   thumbnailId?: string;
+  notes?: string;
   quantity: number;
 
   // Financials

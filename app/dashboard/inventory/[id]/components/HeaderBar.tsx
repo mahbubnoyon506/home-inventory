@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Paperclip, Pencil, Trash, Trash2 } from "lucide-react";
 import React from "react";
-
-const HeaderBar = ({ item }) => {
+interface PageProps {
+  name: string;
+}
+const HeaderBar = ({ name }: PageProps) => {
   return (
     <div>
       <div className="border-b bg-white p-2 md:p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
@@ -10,9 +12,7 @@ const HeaderBar = ({ item }) => {
           <div className="flex items-center gap-2 text-sm text-slate-500">
             <span className="text-[#64748B] text-sm">Inventory</span>
             <ChevronRight size={14} />
-            <span className="text-[#0F172A] font-medium text-sm">
-              {item.name}
-            </span>
+            <span className="text-[#0F172A] font-medium text-sm">{name}</span>
           </div>
         </div>
         <div className="flex-1 flex items-center gap-3 md:justify-end">
@@ -24,7 +24,6 @@ const HeaderBar = ({ item }) => {
           </Button>
           <Button
             variant="outline"
-            size="sm"
             className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50"
           >
             <Trash2 size={14} /> Delete
