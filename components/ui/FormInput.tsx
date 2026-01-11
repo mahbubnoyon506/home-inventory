@@ -1,11 +1,11 @@
-import { Input } from "../ui/input";
+import { Input } from "./input";
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
+} from "./form";
 
 export function TextInput({ control, name, label, placeholder }: any) {
   return (

@@ -1,7 +1,7 @@
 import { User, Eye, Box } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { TextInput } from "@/components/form-fields/FormInput";
+import { TextInput } from "@/components/ui/FormInput";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema, LoginValues } from "@/components/schemas";

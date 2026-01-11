@@ -44,7 +44,7 @@ export default function Sidebar() {
   //   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-white">
+    <div className="flex flex-col justify-between bg-white">
       <div className="flex items-center justify-center md:justify-start gap-3 p-6">
         <div className="bg-blue-600 p-2 rounded-lg text-white">
           <Box size={24} />
