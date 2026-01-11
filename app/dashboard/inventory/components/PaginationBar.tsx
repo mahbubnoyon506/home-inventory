@@ -1,12 +1,16 @@
 import { GlobalPagination } from "@/components/ui/GlobalPagination";
-import { Separator } from "@radix-ui/react-separator";
-import React from "react";
+
+interface PageProps {
+  currentPage: number;
+  totalPages: number;
+  setPage: (page: number) => void;
+}
 
 const PaginationBar = ({
   currentPage = 1,
   totalPages = 10,
-  setPage = () => "",
-}) => {
+  setPage,
+}: PageProps) => {
   return (
     <div>
       <div className="border-t bg-white p-2 md:p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
@@ -16,7 +20,7 @@ const PaginationBar = ({
             <span className="text-[#0F172A] font-semibold"> 248</span> items
           </p>
         </div>
-        <div className="">
+        <div>
           <GlobalPagination
             currentPage={currentPage}
             totalPages={totalPages}

@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 const FilterBar = () => {
   return (
     <div>
-      <div className="bg-white p-2 md:p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
+      <div className="bg-white p-2 md:p-4 flex justify-between items-center gap-3">
         <div className="flex-1 flex gap-3 items-center">
           <h1 className="text-xl md:text-2xl font-bold text-[#0F172A]">
             Inventory
@@ -23,7 +23,7 @@ const FilterBar = () => {
             />
           </div>
         </div>
-        <div className="flex-1 flex items-center gap-3 md:justify-end">
+        <div className="flex-1 flex items-center gap-3 justify-end">
           <Button variant="outline" className="text-[#334155] font-semibold">
             <Download /> Export
           </Button>

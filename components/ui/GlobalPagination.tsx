@@ -37,7 +37,7 @@ export function GlobalPagination({
   };
 
   return (
-    <Pagination className="justify-end mt-4">
+    <Pagination className="justify-end">
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious
