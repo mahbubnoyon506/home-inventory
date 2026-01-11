@@ -7,7 +7,6 @@ import {
   Plus,
   Trash2,
 } from "lucide-react";
-import React from "react";
 
 const BookShelf = () => {
   return (

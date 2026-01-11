@@ -9,7 +9,7 @@ const RootLayout = ({
   return (
     <div className="flex w-full bg-[#F8FAFC] ">
       {/* Left Sidebar */}
-      <aside className="w-20 md:w-64 flex-col border-r bg-white lg:flex">
+      <aside className="w-20 md:w-64 flex-col border-r bg-white lg:flex h-screen sticky top-0">
         <Sidebar />
       </aside>
 

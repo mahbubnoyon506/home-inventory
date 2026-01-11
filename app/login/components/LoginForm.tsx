@@ -113,7 +113,10 @@ export function LoginForm() {
               </button>
             </div>
 
-            <Button className="w-full bg-[#3B82F6] py-6 text-lg hover:bg-blue-700">
+            <Button
+              size="sm"
+              className="w-full bg-[#3B82F6] py-3 hover:bg-blue-700"
+            >
               Sign in →
             </Button>
           </form>

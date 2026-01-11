@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Book, Camera, Plus } from "lucide-react";
 import Image from "next/image";
-import React from "react";
 
 const MOCK_LOCATION_ITEMS = [
   {

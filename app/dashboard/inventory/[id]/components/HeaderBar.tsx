@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Paperclip, Pencil, Trash, Trash2 } from "lucide-react";
-import React from "react";
+import { ChevronRight, Paperclip, Pencil, Trash2 } from "lucide-react";
 interface PageProps {
   name: string;
 }

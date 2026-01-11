@@ -19,7 +19,7 @@ export default function InventoryPage() {
       <FilterBar />
       <div>
         <div className="px-2 md:px-4 pt-4 md:pt-10 ">
-          <div className="rounded-t-xl border bg-white shadow-sm overflow-y-scroll max-h-96">
+          <div className="rounded-t-xl border bg-white shadow-sm overflow-scroll max-h-96">
             <table className="w-full text-left">
               <thead className="bg-slate-50 border-b text-slate-500 text-sm uppercase">
                 <tr>

@@ -1,10 +1,8 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { ItemDetail, Label } from "@/lib/types";
 import { Calendar, MapPin } from "lucide-react";
 import React from "react";
 import { format } from "date-fns";
-
 interface PageProps {
   item: ItemDetail;
 }
@@ -32,8 +30,8 @@ function DetailItem({
 const ItemContent = ({ item }: PageProps) => {
   return (
     <div className="">
-      <Card className="shadow-sm border-slate-200 rounded-2xl">
-        <CardContent className="p-6 space-y-6">
+      <div className="border rounded-xl bg-white">
+        <div className="p-6 space-y-6">
           <h3 className="font-semibold md:text-lg text-[#0F172A]">
             Key Details
           </h3>
@@ -94,8 +92,8 @@ const ItemContent = ({ item }: PageProps) => {
               {item?.notes}
             </p>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 };
