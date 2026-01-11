@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Paperclip, Pencil, Trash } from "lucide-react";
+import { ChevronRight, Paperclip, Pencil, Trash, Trash2 } from "lucide-react";
 import React from "react";
 
 const HeaderBar = ({ item }) => {
@@ -24,9 +24,10 @@ const HeaderBar = ({ item }) => {
           </Button>
           <Button
             variant="outline"
-            className="font-semibold text-red-600 hover:text-red-700 hover:bg-red-50"
+            size="sm"
+            className="font-semibold gap-2 text-red-600 border-red-100 hover:bg-red-50"
           >
-            <Trash /> Delete
+            <Trash2 size={14} /> Delete
           </Button>
         </div>
       </div>
